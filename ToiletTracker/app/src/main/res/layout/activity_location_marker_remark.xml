@@ -1,0 +1,127 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background1">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_margin="16dp"
+                  android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|right"
+                android:src="@mipmap/locationmarker"/>
+
+            <TextView
+                android:id="@+id/tvaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal"
+                android:text=" "
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imgone"
+                    android:layout_width="50dp"
+
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_emojigreen"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imgtow"
+                    android:layout_width="50dp"
+
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_emojiyellow"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imgthree"
+                    android:layout_width="50dp"
+
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_emojired"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvfdbck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:background="@drawable/shape_edittext"
+            android:gravity="center_horizontal"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <EditText
+            android:id="@+id/edtfdbck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:hint="Remark"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnsend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:background="@color/colorPrimary"
+            android:text="Send"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>

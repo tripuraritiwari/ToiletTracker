@@ -1,0 +1,188 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background1">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:text="Your are Requesting Toilet at :- "
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_address_current"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lines="4"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location Type"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvwhere"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/shape_edittext"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:paddingBottom="14dp"
+                android:singleLine="true"
+                android:text="Location Type"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:id="@+id/myRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text"
+                android:checkedButton="@+id/sound"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtnboth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Both"/>
+
+                <RadioButton
+                    android:id="@+id/rbtnmale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Male"/>
+
+                <RadioButton
+                    android:id="@+id/rbtnfemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Female"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="14dp"
+                app:srcCompat="@drawable/icon_file"/>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/descr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="14dp">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+
+                <EditText
+                    android:id="@+id/edtrequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Note"
+
+                    android:maxLines="4"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgvw"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/camera_button_pic_2"
+                />
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnsendrequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimary"
+            android:text="Submit"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</ScrollView>
